@@ -26,5 +26,9 @@ private Rank rank;
    public void setRank(Rank rank) {
       this.rank = rank;
    }
+
+   public String passMessage(){
+      return "Buenos dias";
+   }
 }
 

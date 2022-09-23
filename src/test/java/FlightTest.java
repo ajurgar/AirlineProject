@@ -45,7 +45,7 @@ public class FlightTest {
 
     @Test
     public void canAddPassenger(){
-        flight.addPassenger(passenger);
+        flight.bookAPassenger(passenger);
         assertEquals(1, flight.getPassengers());
     }
 
@@ -54,6 +54,19 @@ public class FlightTest {
         flight.addCrewMember(cabinCrewMember);
         assertEquals(1, flight.getCabinCrewMembers());
 
+    }
+
+    @Test
+    public void canCheckAvailableSeats(){
+        flight.bookAPassenger(passenger);
+        flight.bookAPassenger(passenger);
+        assertEquals(28, flight.getAvailableSeats());
+    }
+
+    @Test
+    public void canBookAPassenger(){
+        flight.bookAPassenger(passenger);
+        assertEquals(1, flight.getPassengers());
     }
 
 }

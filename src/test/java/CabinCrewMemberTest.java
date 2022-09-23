@@ -23,4 +23,10 @@ CabinCrewMember cabinCrewMember;
         public void hasRank(){
             assertEquals(Rank.Purser, cabinCrewMember.getRank());
         }
+
+        @Test
+        public void canPassMessagesToPassengers(){
+            assertEquals("Buenos dias", cabinCrewMember.passMessage());
+        }
 }
+

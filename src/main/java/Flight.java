@@ -38,11 +38,19 @@ public class Flight {
         return flightInfo;
     }
 
-    public void addPassenger(Passenger passenger){
-        passengers.add(passenger);
-    }
+
     public void addCrewMember(CabinCrewMember cabinCrewMember){
         cabinCrewMembers.add(cabinCrewMember);
+    }
+
+    public int getAvailableSeats(){
+        return getPlane().getCapacity()-getPassengers();
+    }
+
+    public void bookAPassenger(Passenger passenger){
+        if(getAvailableSeats() >0) {
+            passengers.add(passenger);
+        }
     }
 
 

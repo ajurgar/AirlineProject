@@ -21,4 +21,10 @@ public class Pilot {
     public String getLicenseNumber() {
         return pilotLicenseNumber;
     }
+
+    public String flyPlane() {
+        return "I believe I can Fly!!!";
+    }
 }
+
+

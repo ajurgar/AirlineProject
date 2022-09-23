@@ -15,4 +15,35 @@ public class Flight {
         this.plane = plane;
         this.flightInfo = flightInfo;
     }
+
+    public Pilot getPilot() {
+        return pilot;
+    }
+
+    public int getCabinCrewMembers() {
+        return cabinCrewMembers.size();
+    }
+
+    public int getPassengers() {
+        return passengers.size();
+    }
+
+
+    public Plane getPlane() {
+        return plane;
+    }
+
+
+    public FlightInfo getFlightInfo() {
+        return flightInfo;
+    }
+
+    public void addPassenger(Passenger passenger){
+        passengers.add(passenger);
+    }
+    public void addCrewMember(CabinCrewMember cabinCrewMember){
+        cabinCrewMembers.add(cabinCrewMember);
+    }
+
+
 }

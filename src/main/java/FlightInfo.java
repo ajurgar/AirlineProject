@@ -15,4 +15,20 @@ public enum FlightInfo {
         this.time = time;
         this.flightNumber = flightNumber;
     }
+
+    public String getDeparture() {
+        return departure;
+    }
+
+    public String getDestination() {
+        return destination;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public String getFlightNumber() {
+        return flightNumber;
+    }
 }
